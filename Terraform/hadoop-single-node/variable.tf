@@ -14,7 +14,7 @@ variable "security_group_ids" {
 }
 
 variable "aws_ami" {
-  default = "ami-0c55b159cbfafe1f0"
+  default = "ami-0003569dd0860582f"
 
 }
 
