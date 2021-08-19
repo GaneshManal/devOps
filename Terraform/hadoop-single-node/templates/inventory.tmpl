@@ -1,0 +1,9 @@
+[namenodes]
+%{ for index, dns in namenode-dns ~}
+${dns} ansible_host=${namenode-ip[index]} # ${namenode-id[index]}
+%{ endfor ~}
+
+[datanodes]
+%{ for index, dns in datanode-dns ~}
+${dns} ansible_host=${datanode-ip[index]} # ${datanode-id[index]}
+%{ endfor ~}
